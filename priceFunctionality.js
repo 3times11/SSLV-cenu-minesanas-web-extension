@@ -17,15 +17,17 @@ function priceHideAndShow(){
 
 function removeListingPageDetails(){
 
+  const textTwo = document.querySelectorAll('.omsg')
+  for (const el of textTwo) {
+    el.remove();
+  }
+    
   const textOne = document.querySelectorAll('.amopt')
   for (const el of textOne) {
     el.remove();
   }
 
-  const textTwo = document.querySelectorAll('.omsg')
-  for (const el of textTwo) {
-    el.remove();
-  }
+  
 }
 
 removeListingPageDetails();
