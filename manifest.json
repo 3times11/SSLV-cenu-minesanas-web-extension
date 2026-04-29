@@ -21,7 +21,7 @@
 
   "content_scripts": [
     {
-        "matches": ["*://*.ss.lv/*"],
+        "matches": ["*://*.ss.lv/*", "*://m.ss.lv/*"],
         "js": ["priceFunctionality.js"],
         "css": ["pageCSS.css"]
     }
