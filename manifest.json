@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "SSlv listing price guessing",
+    "version": "1.0",
+
+    "description": "Removes the prices from listings and makes them reappear when the button is pressed",
+
+    "permissions": ["activeTab", "scripting"],
+    "icons":{
+        "48": "icons/icon.png"
+    },
+
+    "browser_specific_settings": {
+    "gecko": {
+      "id": "sslvgame@game.lv",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
+
+  "content_scripts": [
+    {
+        "matches": ["*://*.ss.lv/*"],
+        "js": ["priceFunctionality.js"],
+        "css": ["pageCSS.css"]
+    }
+  ]
+}
