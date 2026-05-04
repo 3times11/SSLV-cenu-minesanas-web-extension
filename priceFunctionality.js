@@ -30,5 +30,6 @@ function removeListingPageDetails(){
   
 }
 
+document.querySelector("title").remove();
 removeListingPageDetails();
 priceHideAndShow();
